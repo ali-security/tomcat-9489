@@ -31,7 +31,7 @@ jobs:
       matrix:
         isMain:
           - ${{ contains(github.ref, 'main') }}
-        java: [ 26-ea ]
+        java: [ 21 ]
         os: [ ubuntu-24.04 ]
     name: JDK${{ matrix.java }} ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
